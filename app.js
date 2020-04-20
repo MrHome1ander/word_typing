@@ -8,7 +8,7 @@ const settings = document.getElementById('settings');
 const settingsForm = document.getElementById('settings-form');
 const difficultySelect = document.getElementById('difficulty');
 
-// List of words for game
+
 const words = [
     'Будущий',
     'Трафик',
