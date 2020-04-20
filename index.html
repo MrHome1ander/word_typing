@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+        integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Speed Typer</title>
+</head>
+
+<body>
+    <button id="settings-btn" class="settings-btn">
+        <i class="fas fa-cog"></i>
+    </button>
+
+    <div id="settings" class="settings">
+        <form id="settings-form">
+            <div>
+                <label for="difficulty">Сложность</label>
+                <select id="difficulty">
+                    <option value="easy">Легко</option>
+                    <option value="medium">Средне</option>
+                    <option value="hard">Сложно</option>
+                </select>
+            </div>
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>👩‍💻 Speed Typer 👨‍💻</h2>
+        <small>Впишите следующее слово:</small>
+
+        <h1 id="word"></h1>
+
+        <input type="text" id="text" autocomplete="off" placeholder="Здесь вписывать слова..." />
+
+        <p class="time-container">Осталось времени: <span id="time">10s</span></p>
+
+        <p class="score-container">Счёт: <span id="score">0</span></p>
+
+        <div id="end-game-container" class="end-game-container"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
